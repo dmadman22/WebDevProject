@@ -8,8 +8,8 @@ const path = require("path")
 const Joi = require("joi")
 const { campgroundSchema, reviewSchema } = require("./schemas.js")
 const helmet = require("helmet")
-// const dbUrl = process.env.DB_URL
-const dbUrl = 'mongodb://localhost:27017/yelp-camp'
+const dbUrl = process.env.DB_URL
+// const dbUrl = 'mongodb://localhost:27017/yelp-camp'
 
 const Campground = require("./models/campground")
 const Review = require("./models/review")
@@ -35,7 +35,7 @@ const { resolveAny } = require("dns")
 const db = mongoose.connection
 main().catch(err => console.log(err));
 async function main() {
-  await mongoose.connect(dbUrl);
+  await mongoose.connect(dbUrl || 'mongodb://localhost:27017/yelp-camp');
   console.log("Connected to MongoDB")
 }
 //mongodb://localhost:27017/yelp-camp
