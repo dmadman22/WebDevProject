@@ -6,3 +6,6 @@ It was built with Node.js and utilizes Express-js and MongoDB as well as many pa
 Packages can be found in packages.json.
 
 It is still a work in progress, so it may have a few bugs that need to be ironed out. 
+
+Live app is located @
+https://mysterious-fortress-41563.herokuapp.com/
