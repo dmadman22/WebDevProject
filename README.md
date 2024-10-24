@@ -8,3 +8,5 @@ Packages can be found in packages.json.
 
 Live app is located @
 https://mysterious-fortress-41563.herokuapp.com/
+
+Update: Application has been retired
